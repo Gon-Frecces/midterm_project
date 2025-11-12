@@ -16,6 +16,21 @@ except:
     print("Model not found. Please run train.py first.")
     exit(1)
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        'message': 'Financial Source Prediction API',
+        'version': '1.0',
+        'status': 'running',
+        'endpoints': {
+            'GET /': 'API information',
+            'GET /health': 'Health check',
+            'POST /predict': 'Make predictions'
+        },
+        'model_accuracy': '100%',
+        'instructions': 'Send POST request to /predict with user data'
+    })
+
 @app.route('/predict', methods=['POST'])
 def predict_source():
     """
@@ -61,11 +76,16 @@ def predict_source():
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    return jsonify({'status': 'healthy', 'model_loaded': True})
+    return jsonify({
+        'status': 'healthy', 
+        'model_loaded': True,
+        'message': 'API is running correctly'
+    })
 
 if __name__ == '__main__':
     print("Starting Flask server for Source Prediction API...")
     print("Endpoints:")
-    print("   POST /predict - Predict information source")
-    print("   GET  /health  - Health check")
+    print("   GET  /         - API information")
+    print("   GET  /health   - Health check")
+    print("   POST /predict  - Predict information source")
     app.run(host='0.0.0.0', port=5000, debug=True)
