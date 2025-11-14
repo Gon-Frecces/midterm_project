@@ -2,12 +2,12 @@
 
 ## Project Overview
 
-This machine learning project predicts the information sources that individuals use for financial decision-making based on their demographics, investment preferences, and behavioral factors. The model achieves 100% accuracy in predicting whether individuals use Financial Consultants, Internet, Newspapers/Magazines, or Television as their primary financial information source.
+This machine learning project predicts the information sources that individuals use for financial decision-making based on their demographics, investment preferences, and behavioral factors. The model achieves 100% accuracy in predicting whether individuals use Financial Consultants, Internet, Newspapers/Magazines, or Television as their primary financial information source. The dataset is located in the Finance_Trends.csv file
 
 ##  Demo Video
 
 https://drive.google.com/file/d/1ep-dPJc5I-CjZjt_IfK12RI5j_kx8kv0/view?usp=sharing 
-The above link shows a video of the full API demonstration
+The link shows a video of the full API demonstration
 
 ### Business Problem
 Financial institutions struggle to understand where different customer segments get their financial information. This leads to inefficient marketing strategies and poor communication channel targeting. By predicting information source preferences, companies can optimize marketing budget allocation, personalize communication strategies, develop targeted advertising campaigns, and improve customer acquisition and retention.
