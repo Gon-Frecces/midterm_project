@@ -126,7 +126,7 @@ python train.py
 python predict.py
 
 4. Test endpoints
-curl http://localhost:5000/health
+curl https://crispy-spoon-7qq5j74wvwhpxx6-5000.app.github.dev/
 
 ### Docker Deployment
 Build and run with Docker
