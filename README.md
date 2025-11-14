@@ -1,4 +1,4 @@
-## Financial decision making news source Prediction API
+## News source (for Financial decicion making) prediction API
 
 ## Project Overview
 
